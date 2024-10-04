@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none; /*comando para remover underlines dos icons adicionados*/
+}
+
+body {
+    background: url("../img/fundodarkgrande.jpeg") no-repeat top center/cover; /*comandos para fazer com que a imagem de fundo ocupe tod o espaço desejado*/
 }
