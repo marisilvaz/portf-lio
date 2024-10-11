@@ -1,13 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Gluten:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background: url("../img/fundodarkgrande.jpeg") no-repeat top center/cover; /*comandos para fazer com que não se repita e a imagem de fundo ocupe todo o espaço desejado*/
+}
+
 a {
     text-decoration: none; /*comando para remover underlines dos icons adicionados*/
 }
 
-body {
-    background: url("../img/fundodarkgrande.jpeg") no-repeat top center/cover; /*comandos para fazer com que a imagem de fundo ocupe tod o espaço desejado*/
+body * {  /*quando tiver o body * ele seleciona o corpo todo para as propriedades colocadas*/
+    color: white;
 }
+
+p {
+    font-family: "Gluten", cursive;
+}
+
+.container {
+    max-width: 580px; /*define o tamanho maximo da largura do elemento*/
+    margin: 50px auto;
+    padding: 0 25px;
+    /*background-color: rgb(54, 32, 32);/*para ver as propriedades sendo aplicadas*/
+}
+
+.perfil img {
+    width: 280px;
+    border-radius: 200px 200px 200px 200px; /*para arredondar uma imagem*/
+}
+
+.perfil {
+    text-align: center;
+    padding: 25px 0;
+}
+
+
+
+
+
+
+/*colocando assim posso alterar as propriedades de mais de uma tag/  não tem problema colocar a dnv
+p, footer, a {
+    color: white;
+}*/
+
+
