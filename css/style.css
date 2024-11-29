@@ -8,10 +8,7 @@
 
 body {
     background: url("../img/fundodarkgrande.jpeg") no-repeat top center/cover; /*comandos para fazer com que não se repita e a imagem de fundo ocupe todo o espaço desejado*/
-}
-
-a {
-    text-decoration: none; /*comando para remover underlines dos icons adicionados*/
+    height: 100vh;
 }
 
 body * {  /*quando tiver o body * ele seleciona o corpo todo para as propriedades colocadas*/
@@ -22,12 +19,90 @@ p {
     font-family: "Gluten", cursive;
 }
 
+a {
+    text-decoration: none; /*comando para remover underlines dos icons adicionados*/
+}
+
 .container {
+    width: 100%;
     max-width: 580px; /*define o tamanho maximo da largura do elemento*/
     margin: 50px auto;
     padding: 0 25px;
     /*background-color: rgb(54, 32, 32);/*para ver as propriedades sendo aplicadas*/
 }
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white url(../img/moon-stars.svg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translate(-50%);
+    animation: slide-back 0.2s;
+}
+
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+    background: white url(../img/sun.svg) no-repeat center;
+}
+
+#switch button:hover {
+    outline: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+.light #switch span {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+
+
+
+
+
 
 .perfil img {
     width: 280px;

@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
     <title>Portfólio</title>
 </head>
+
 <body>
     <div class="container">
         <div class="perfil">
-            <img src="img/fotodark.jpeg" alt="Foto de uma mulher branca, com cabelos longos, olhos escuros, usando uma camiseta azul e o fundo uma grafite de uma cidade.">
+            <img class="foto-perfil" src="img/fotoescura.jpeg"
+                alt="Foto de uma mulher branca, com cabelos longos, olhos escuros, usando uma camiseta azul e o fundo uma grafite de uma cidade.">
             <p>@marisilvaz🌹</p>
+        </div>
+
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
         </div>
 
         <ul>
             <li>
-                <a href="">Um Pouco Sobre Mim</a>
+                <a href="#">Um Pouco Sobre Mim</a>
             </li>
             <li>
-                <a href="">Baixar Currículo</a>
+                <a href="#">Baixar Currículo</a>
             </li>
             <li>
-                <a href="">Ver meu Portfólio</a>
+                <a href="https://github.com/marisilvaz/portf-lio">Ver meu Portfólio</a>
             </li>
             <li>
-                <a href="">Projetos Realizados</a>
+                <a href="#" target="_blank">Projetos Realizados</a>
             </li>
         </ul>
 
-        <div>
+        <div id="social-links">
             <a href="https://github.com/marisilvaz">
                 <ion-icon name="logo-github"></ion-icon>
             </a>
@@ -41,14 +50,13 @@
                 <ion-icon name="logo-linkedin"></ion-icon>
             </a>
         </div>
-        
+
         <footer>
-            Feito com 🤍 junto com os alunos da <a href="">Etec de Embu</a>
+            Feito com 🤍 junto com os alunos da <a href="https://www.etecdeembu.com.br/">Etec de Embu</a>
         </footer> <!--rodape do site-->
 
     </div>
-
-
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
-</html> 
+
+</html>
